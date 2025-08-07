@@ -1,0 +1,7 @@
+[build]
+  command = "unzip -o linkboost_updated.zip -d project && cd project && npm install --legacy-peer-deps && npm run build"
+  publish = "project/.next"
+  functions = "project/.netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"

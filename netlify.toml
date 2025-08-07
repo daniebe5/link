@@ -1,7 +1,7 @@
-[uild]
-command = "unzip -o linkboost_updated.zip -d project && cd project/linkboost && npm install --legacy-peer-deps && npm run build"
-publish = "project/linkboost/.next"
-functions = "project/linkboost/.netlify/functions"
+[build]
+command = "unzip -o linkboost_updated.zip && cd linkboost && npm install --legacy-peer-deps && npm run build"
+publish = "linkboost/.next"
+functions = "linkboost/.netlify/functions"
 
 [build.environment]
 NODE_VERSION = "20"
